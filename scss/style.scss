@@ -9,7 +9,9 @@
       text-decoration: none;
     }
   }
-
+  .desktop-nav {
+    display: none;
+  }
   .more {
     font-weight: bold;
     font-size: 16px;
@@ -18,7 +20,8 @@
       color: #ac8a46;
     }
   }
-  nav {
+
+  .mobile-nav {
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -44,6 +47,7 @@
       font-size: 26px;
     }
   }
+
   #switchMenu {
     position: absolute;
     opacity: 0;
@@ -285,6 +289,227 @@
         width: 128px;
         height: 38px;
         margin-right: 23px;
+      }
+    }
+  }
+}
+@media (min-width: 376px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Noto Sans TC", sans-serif;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .insideMenu {
+    display: none;
+  }
+  #switchMenu {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .more {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    a {
+      color: #ac8a46;
+    }
+  }
+
+  .desktop-nav {
+    align-items: center;
+    height: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      width: 128px;
+      height: 38px;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 32px;
+        i {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .main-pic {
+    img {
+      width: 100%;
+      height: 870px;
+      object-fit: cover;
+    }
+    .main-text {
+      position: absolute;
+      color: #fff;
+      top: 70%;
+      right: 5%;
+      width: 445px;
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 24px;
+      }
+      button {
+        margin-top: 16px;
+        width: 350px;
+        height: 60px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0);
+        border: #fff solid 2px;
+        transition: 0.3s;
+        a {
+          color: #fff;
+          font-size: 20px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+      }
+      button:hover {
+        background: rgba(255, 255, 255, 0.808);
+        border: 0;
+        a {
+          color: #707070;
+        }
+      }
+    }
+  }
+  .container {
+    margin: 0 auto;
+    .productCards {
+      margin-top: 60px;
+      .pic-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        .productCardsText {
+          width: 555px;
+          box-sizing: border-box;
+          padding: 110px;
+          h2 {
+            font-size: 32px;
+            font-weight: bold;
+          }
+          p {
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+      .pic-left {
+        display: flex;
+        justify-content: center;
+        .productCardsText {
+          width: 555px;
+          box-sizing: border-box;
+          padding: 110px;
+          h2 {
+            font-size: 32px;
+            font-weight: bold;
+          }
+          p {
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+      img {
+        width: 555px;
+        height: 555px;
+        object-fit: cover;
+        object-position: 20% 10%;
+      }
+      .productDetail {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 555px;
+          height: 1080px;
+          object-fit: cover;
+          object-position: 80% 10%;
+        }
+        .productDetailText {
+          width: 555px;
+          padding: 110px;
+          box-sizing: border-box;
+          li {
+            margin-bottom: 52px;
+          }
+        }
+        button {
+          border: 2px solid #000;
+          cursor: pointer;
+          width: 350px;
+          height: 60px;
+          border-radius: 30px;
+          background: rgba(0, 0, 0, 0);
+          transition: 0.3s;
+          a {
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+          }
+        }
+        button:hover {
+          background: #916000;
+          border: #fff;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .productList {
+    width: 100%;
+    padding: 40px 0;
+    background: #e0e0e0;
+    margin-top: 60px;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin: 0 15px;
+        img {
+          width: 350px;
+          height: 540px;
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .productPrice {
+          margin-top: 16px;
+          span {
+            margin-right: 8px;
+          }
+          .product-sale {
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .sold-out:hover {
+        img::after {
+          right: 30px;
+          width: 350px;
+          height: 540px;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.342);
+        }
       }
     }
   }
