@@ -1,0 +1,310 @@
+@media (max-width: 376px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Noto Sans TC", sans-serif;
+    max-width: 375px;
+  }
+  * a {
+    text-decoration: none;
+  }
+  .more {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .more a {
+    color: #ac8a46;
+  }
+  nav {
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 56px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+  }
+  nav img {
+    width: 128px;
+    height: 38px;
+    margin-right: 116px;
+  }
+  nav .fas {
+    color: #8d8d8d;
+  }
+  nav .fa-shopping-cart {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  nav .fa-bars {
+    font-size: 26px;
+  }
+  #switchMenu {
+    position: absolute;
+    opacity: 0;
+  }
+  #switchMenu:checked + .insideMenu {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .insideMenu {
+    z-index: 1;
+    top: 56px;
+    display: block;
+    height: 100%;
+    position: fixed;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .insideMenu li {
+    width: 375px;
+    background: #707070;
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #ffffff;
+  }
+  .insideMenu li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .main-pic {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: auto;
+  }
+  .main-pic img {
+    width: 375px;
+    height: 480px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 15% 50%;
+       object-position: 15% 50%;
+  }
+  .main-pic .main-text {
+    position: absolute;
+    top: 25%;
+    color: #ffffff;
+    padding: 0 15px;
+  }
+  .main-pic .main-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .main-pic .main-text p {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .main-pic .main-text button {
+    width: 345px;
+    border: 1px #fff solid;
+    background: rgba(0, 0, 0, 0);
+    font-size: 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 8px;
+  }
+  .main-pic .main-text button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container {
+    max-width: 375px;
+    height: auto;
+  }
+  .container .productCards {
+    padding: 40px 15px;
+  }
+  .container .productCards ul li {
+    margin-top: 32px;
+  }
+  .container .productCards ul li img {
+    width: 345px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 20% 10%;
+       object-position: 20% 10%;
+  }
+  .container .productCards ul li h2 {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+  .container .productCards ul li p {
+    font-size: 20px;
+  }
+  .container .productCards ul li span {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .container .productCards ul li span a {
+    color: #ac8a46;
+  }
+  .container .productDetail {
+    margin-top: 32px;
+    position: relative;
+  }
+  .container .productDetail img {
+    width: 345px;
+    height: 680px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .productDetail ul li {
+    margin: 0;
+  }
+  .container .productDetail ul li h3 {
+    font-size: 24px;
+  }
+  .container .productDetail ul li p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .container .productDetail button {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container .productDetail button a {
+    color: #000;
+  }
+  .productList {
+    background: #e0e0e0;
+    width: 100%;
+  }
+  .productList ul {
+    padding: 32px 16px 8px 16px;
+  }
+  .productList ul li {
+    margin-bottom: 32px;
+  }
+  .productList ul li img {
+    width: 344px;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 100%;
+       object-position: 50% 100%;
+  }
+  .productList ul li h3 {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .productList ul li span {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+  .productList ul li .product-sale {
+    color: #8d8d8d;
+    text-decoration: line-through;
+  }
+  .recycleState {
+    padding: 40px 15px;
+  }
+  .recycleState img {
+    width: 345px;
+    height: 520px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .recycleState h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .recycleState p {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .recycleState span {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  footer .subscribe {
+    position: relative;
+    height: 600px;
+  }
+  footer .subscribe img {
+    width: 375px;
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 2% 10%;
+       object-position: 2% 10%;
+  }
+  footer .subscribe .subscribeText {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    height: 30px;
+    color: #8d8d8d;
+    padding: 0 15px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  footer .subscribe .subscribeText input {
+    width: 330px;
+    padding-left: 15px;
+    height: 60px;
+    font-size: 16px;
+    border: #916000 2px solid;
+  }
+  footer .subscribe .subscribeText span {
+    border: #916000 2px solid;
+    display: inline-block;
+    width: 129px;
+    height: 60px;
+    position: relative;
+    bottom: 64px;
+    right: -215px;
+    background: #916000;
+    color: #ffffff;
+    line-height: 60px;
+    font-size: 16px;
+    text-align: center;
+  }
+  footer .copyRight {
+    background: #916000;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .copyRight img {
+    width: 128px;
+    height: 38px;
+    margin-right: 23px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
