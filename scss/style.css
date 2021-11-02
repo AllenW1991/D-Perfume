@@ -198,6 +198,68 @@
   .container .productDetail button a {
     color: #000;
   }
+  .container .prouct-list-more {
+    position: relative;
+    top: 56px;
+    margin-bottom: 46px;
+  }
+  .container .prouct-list-more ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .prouct-list-more ul li {
+    width: 165px;
+    margin: 15px 7.5px;
+  }
+  .container .prouct-list-more ul li img {
+    width: 165px;
+    height: 165px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .prouct-list-more ul li .product-sale {
+    text-decoration: line-through;
+    color: #8d8d8d;
+    margin-left: 8px;
+  }
+  .container .prouct-list-more ul li i {
+    margin-top: 3px;
+    font-size: 18px;
+    color: #916019;
+  }
+  .container .prouct-list-more ul li i a {
+    color: #916019;
+  }
+  .container .pages {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container .pages span {
+    margin: 0 10px;
+    font-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    font-weight: bold;
+  }
+  .container .pages span:first-child {
+    color: #ac8a46;
+    border-bottom: 2px solid #ac8a46;
+  }
   .productList {
     background: #e0e0e0;
     width: 100%;
@@ -353,6 +415,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -360,9 +424,10 @@
   .desktop-nav img {
     width: 128px;
     height: 38px;
-    margin-right: 553px;
+    margin-right: 532px;
   }
   .desktop-nav ul {
+    text-align: right;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -370,8 +435,41 @@
   .desktop-nav ul li {
     margin-right: 32px;
   }
+  .desktop-nav ul li a {
+    color: #8d8d8d;
+  }
   .desktop-nav ul li i {
     margin-right: 3px;
+  }
+  .desktop-nav .banner {
+    width: 100%;
+    background: #916000;
+    display: block;
+    height: 40px;
+  }
+  .desktop-nav .banner .brand {
+    width: 1110px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .desktop-nav .banner .brand span {
+    height: 40px;
+    line-height: 40px;
+    margin-right: 28px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-size: 20px;
+  }
+  .desktop-nav .banner .brand span a {
+    color: #fff;
+  }
+  .desktop-nav .banner .brand span:hover {
+    font-weight: bold;
   }
   .main-pic img {
     width: 100%;
@@ -526,6 +624,58 @@
   }
   .container .productCards .productDetail button:hover a {
     color: #fff;
+  }
+  .container .prouct-list-more {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .container .prouct-list-more .product-sale {
+    text-decoration: line-through;
+    color: #8d8d8d;
+    margin-left: 8px;
+  }
+  .container .prouct-list-more ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .prouct-list-more ul li {
+    width: 255px;
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+  .container .prouct-list-more ul li img {
+    width: 255px;
+    height: 255px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .prouct-list-more ul li i {
+    color: #916019;
+  }
+  .container .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
+  .container .pages span {
+    margin: 0 15px;
+    font-size: 20px;
+  }
+  .container .pages span:first-child a {
+    color: #916019;
+    border-bottom: 1px solid #916019;
   }
   .productList {
     width: 100%;
