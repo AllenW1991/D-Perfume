@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <link
+    rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
+    integrity='sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=='
+    crossorigin='anonymous'
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="./scss/style.css"
+  >
+  <title>D'Perfume Member</title>
+</head>
+
+<body>
+
+  <nav class="mobile-nav">
+    <img
+      src="./img/d’Perfume@2x.png"
+      alt=""
+    >
+    <i class="fas fa-shopping-cart"></i>
+    <label for="switchMenu">
+      <i class="fas fa-bars"></i>
+    </label>
+
+  </nav>
+  <div class="desktop-nav"><img
+      src="./img/d’Perfume@2x.png"
+      alt=""
+    >
+    <ul>
+      <li> <a href=""><i class="fas fa-store-alt"></i>Product</a></li>
+      <li><a href=""><i class="fas fa-user"></i></i>Log in</a></li>
+      <li><a href=""><i class="fas fa-heart"></i></i>Wishlist</a></li>
+      <li><a href=""><i class="fas fa-shopping-cart"></i>Cart</a></li>
+    </ul>
+
+    <div class="banner">
+      <div class="brand">
+        <span><a href=""> CHANEL</a></span>
+        <span><a href=""> Jo Malone</a></span>
+        <span><a href=""> Curology</a></span>
+        <span><a href=""> Dior</a></span>
+        <span><a href=""> Chloe</a></span>
+        <span><a href=""> ZARA</a></span>
+      </div>
+    </div>
+  </div>
+  <input
+    type="checkbox"
+    id="switchMenu"
+  >
+  <ul class="insideMenu">
+    <li><a href="">Product</a> </li>
+    <li><a href="">Whishlist</a> </li>
+    <li><a href="">Blog</a> </li>
+    <li><a href="">Contact</a> </li>
+    <li><a href="">Log in</a> </li>
+  </ul>
+
+  <div class="container">
+    <div class="memberCenter">
+      <div class="sidebar">
+        <h1>會員中心</h1>
+        <ul>
+          <li>會員資料修改</li>
+          <li>訂單查詢</li>
+          <li>退/換貨申請</li>
+        </ul>
+      </div>
+      <div class="mobile-memberShow">
+        <div class="mobile-member">
+          <div class="member">
+            <div class="memberInfo">
+              <h2>個人資料修改</h2>
+              <ul>
+                <li>會員帳號<span>email@example.com</span></li>
+                <li>會員姓名<input type="text"></li>
+                <li>會員性別<select
+                    name=""
+                    id=""
+                  >
+                    <option value="">男性</option>
+                    <option value="">女性</option>
+                  </select></li>
+                <li>電子信箱<input
+                    type="text"
+                    placeholder="email@example.com"
+                  ></li>
+                <li>手機號碼<input type="text"></li>
+                <li class="memberAddr">
+                  <span>聯絡地址</span>
+                  <div class="memAddrInfo ">
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">台灣及離島</option>
+                      <option value="">國外</option>
+                    </select>
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">台北市</option>
+                      <option value="">新北市</option>
+                      <option value="">桃園縣</option>
+                      <option value="">新竹縣</option>
+                      <option value="">新竹市</option>
+                    </select>
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">信義區</option>
+                      <option value="">中正區</option>
+                      <option value="">大安區</option>
+                      <option value="">萬華區</option>
+                    </select>
+                    <input
+                      type="text"
+                      placeholder="請輸入地址"
+                    >
+                    <span><input type="checkbox">我願意收到最新優惠情報</span>
+                  </div>
+                </li>
+                <li class="memberAddr">
+                  <span>配送地址</span>
+                  <div class="memAddrInfo ">
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">台灣及離島</option>
+                      <option value="">外籍</option>
+                    </select>
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">台北市</option>
+                      <option value="">新北市</option>
+                      <option value="">桃園縣</option>
+                      <option value="">新竹縣</option>
+                      <option value="">新竹市</option>
+                    </select>
+                    <select
+                      name=""
+                      id=""
+                    >
+                      <option value="">信義區</option>
+                      <option value="">中正區</option>
+                      <option value="">大安區</option>
+                      <option value="">萬華區</option>
+                    </select>
+                    <input
+                      type="text"
+                      placeholder="請輸入地址"
+                    >
+                    <span class="confirmMod">確定修改</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="memberPD">
+              <h2>
+                修改密碼
+              </h2>
+              <ul>
+                <li>舊密碼<input type="password"></li>
+                <li>新密碼<input type="password"></li>
+                <li>確認密碼<input type="password"></li>
+              </ul>
+              <span>
+                變更密碼
+              </span>
+            </div>
+          </div>
+          <div class="order">
+
+          </div>
+          <div class="returnApply">
+          </div>
+        </div>
+        <div class="memberNumber">
+          <div class="memberNumberInfo">
+            <i class="fas fa-user"></i>
+            <h3>
+              會員編碼 T00020080615
+            </h3>
+          </div>
+          <ul>
+            <li>購物車 <span>56</span></li>
+            <li>我的收藏 <span>23</span></li>
+            <li>完成訂單 <span>2</span></li>
+            <li>會員紅利 <span>500</span></li>
+            <li>購物車 <span>TK2075</span></li>
+            <span class="bonus">(新戶輸入邀請碼即可獲贈紅利點數1000點)</span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="mobile-footer">
+
+    <div class="mobile-copyRight">
+      <img
+        src="./img/d’Perfumewhite@2x.png"
+        alt=""
+      >
+      <span>© 2021. All Rights Reserved.</span>
+    </div>
+
+
+
+
+
+
+  </footer>
+  <footer class="desktop-footer">
+
+    <div class="desktop-copyright">
+      <div class="copyright-container">
+        <div class="copyright-left">
+          <img
+            src="./img/d’Perfumewhite@2x.png"
+            alt=""
+          >
+          <span>© 2020. All Rights Reserved.</span>
+        </div>
+        <div class="copyright-right">
+          <ul>
+            <li><a href="">Product</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
