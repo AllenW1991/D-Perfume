@@ -149,7 +149,7 @@
   }
   .container .memberCenter select {
     border-radius: 4px;
-    border: 1px solid #CED4DA;
+    border: 1px solid #ced4da;
   }
   .container .memberCenter .sidebar h1 {
     display: none;
@@ -614,6 +614,10 @@
   .container .log-in .log-info .log-in-buttons span {
     font-size: 24px;
   }
+  .container .log-in .log-info .log-in-buttons span a {
+    color: #916000;
+    font-size: 16px;
+  }
   .container .log-in .log-info .log-in-buttons .log-in-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -638,6 +642,7 @@
     margin-left: 8px;
   }
   .container .log-in .log-info .log-in-buttons .log-in-button span a {
+    text-decoration: none;
     display: inline-block;
     color: #916000;
     font-size: 16px;
