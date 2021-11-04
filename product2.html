@@ -25,16 +25,23 @@
     rel="stylesheet"
     href="./scss/style.css"
   >
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'
+    integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=='
+    crossorigin='anonymous'
+  ></script>
+  <script src="./index.js"></script>
   <title>D'Perfume Product2</title>
 </head>
 
 <body>
 
   <nav class="mobile-nav">
-    <img
-      src="./img/d’Perfume@2x.png"
-      alt=""
-    >
+    <a href="https://allenw1991.github.io/D-Perfume/index.html">
+      <img
+        src="./img/d’Perfume@2x.png"
+        alt=""
+      ></a>
     <i class="fas fa-shopping-cart"></i>
     <label for="switchMenu">
       <i class="fas fa-bars"></i>
@@ -92,9 +99,15 @@
         <span>NT$4,980</span>
 
         <div class="input-number">
-          <input type="number">
-          <i class="fas fa-sort-up"></i>
-          <i class="fas fa-sort-down"></i>
+          <input type="number" id="product-number" value=0>
+          <i
+            class="fas fa-sort-up"
+            id="addNumber"
+          ></i>
+          <i
+            class="fas fa-sort-down"
+            id="reduceNumber"
+          ></i>
           <span><a href="https://allenw1991.github.io/D-Perfume/login.html">加入購物車</a></span>
         </div>
 
