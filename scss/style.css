@@ -27,9 +27,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -43,7 +46,6 @@
   .mobile-nav img {
     width: 128px;
     height: 38px;
-    margin-right: 116px;
   }
   .mobile-nav .fas {
     color: #8d8d8d;
@@ -719,6 +721,17 @@
   }
   .recycleState {
     padding: 40px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   .recycleState img {
     width: 345px;
@@ -752,7 +765,6 @@
        object-position: 2% 10%;
   }
   footer .subscribe .subscribeText {
-    width: 100%;
     position: absolute;
     top: 60%;
     height: 30px;
@@ -760,6 +772,9 @@
     padding: 0 15px;
     font-size: 32px;
     font-weight: bold;
+  }
+  footer .subscribe .subscribeText p {
+    width: 320px;
   }
   footer .subscribe .subscribeText input {
     width: 330px;
@@ -775,7 +790,7 @@
     height: 60px;
     position: relative;
     bottom: 64px;
-    right: 1%;
+    right: 0;
     bottom: 0;
     background: #916000;
     color: #ffffff;

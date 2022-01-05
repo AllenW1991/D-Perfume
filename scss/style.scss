@@ -27,7 +27,9 @@
   .mobile-nav {
     z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
     align-items: center;
     height: 56px;
     flex-wrap: wrap;
@@ -37,7 +39,6 @@
     img {
       width: 128px;
       height: 38px;
-      margin-right: 116px;
     }
     .fas {
       color: #8d8d8d;
@@ -635,6 +636,10 @@
   }
   .recycleState {
     padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     img {
       width: 345px;
       height: 520px;
@@ -666,7 +671,6 @@
         object-position: 2% 10%;
       }
       .subscribeText {
-        width: 100%;
         position: absolute;
         top: 60%;
         height: 30px;
@@ -674,6 +678,9 @@
         padding: 0 15px;
         font-size: 32px;
         font-weight: bold;
+        p {
+          width: 320px;
+        }
         input {
           width: 330px;
           padding-left: 15px;
@@ -688,7 +695,7 @@
           height: 60px;
           position: relative;
           bottom: 64px;
-          right: 1%;
+          right: 0;
           bottom: 0;
           background: #916000;
           color: #ffffff;
@@ -1402,6 +1409,7 @@
   }
   .recycleState {
     display: flex;
+
     justify-content: center;
     padding: 60px 0;
     img {
